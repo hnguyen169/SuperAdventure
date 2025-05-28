@@ -49,6 +49,9 @@
             this.rtbMessages = new System.Windows.Forms.RichTextBox();
             this.dgvInventory = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).BeginInit();
+            this.dgvQuests = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).BeginInit();
+            this.Controls.Add(this.dgvQuests);
             this.SuspendLayout();
             // 
             // label1
@@ -246,6 +249,23 @@
             this.dgvInventory.Size = new System.Drawing.Size(312, 309);
             this.dgvInventory.TabIndex = 19;
             // 
+            // dgvQuests
+            // 
+            this.dgvQuests.AllowUserToAddRows = false;
+            this.dgvQuests.AllowUserToDeleteRows = false;
+            this.dgvQuests.AllowUserToResizeRows = false;
+            this.dgvQuests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvQuests.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvQuests.Enabled = false;
+            this.dgvQuests.Location = new System.Drawing.Point(16, 446);
+            this.dgvQuests.MultiSelect = false;
+            this.dgvQuests.Name = "dgvQuests";
+            this.dgvQuests.ReadOnly = true;
+            this.dgvQuests.RowHeadersVisible = false;
+            this.dgvQuests.Size = new System.Drawing.Size(312, 189);
+            this.dgvQuests.TabIndex = 20;
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQuests)).EndInit();
+            // 
             // SuperAdventure
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,7 +294,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SuperAdventure";
             this.Text = "My Game";
-            this.Load += new System.EventHandler(this.SuperAdventure_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -303,6 +322,7 @@
         private System.Windows.Forms.RichTextBox rtbLocation;
         private System.Windows.Forms.RichTextBox rtbMessages;
         private System.Windows.Forms.DataGridView dgvInventory;
+        private System.Windows.Forms.DataGridView dgvQuests;
     }
 }
 
